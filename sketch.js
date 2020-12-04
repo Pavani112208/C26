@@ -3,7 +3,12 @@ const World= Matter.World;
 const Bodies = Matter.Bodies;
 
 var engine, world;
-var box1, pig1;
+var box1, box2,box3,box4,box5;
+var pig1,pig2;
+var log1,log2,log3,log4;
+var bird;
+var backgroundImg;
+
 
 
 function preload() {
@@ -27,11 +32,11 @@ function setup(){
     box4 = new Box(1000,450,70,70);
     pig2 = new Pig(900, 450);
 
-    log3 =  new Log(900,410,280, PI/2);
+    log2 =  new Log(900,410,280, PI/2);
 
     box5 = new Box(900,360,70,70);
-    log4 = new Log(840,360,150, PI/7);
-    log5 = new Log(960,360,150, -PI/7);
+    log3 = new Log(840,360,150, PI/7);
+    log4 = new Log(960,360,150, -PI/7);
    
     bird = new Bird(200,200);
 
@@ -50,11 +55,11 @@ function draw(){
     box3.display();
     box4.display();
     pig2.display();
-    log3.display();
+    log2.display();
 
     box5.display();
+    log3.display();
     log4.display();
-    log5.display();
 
     bird.display();
 }
